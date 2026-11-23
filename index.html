@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El diario de Mishi: una historia interactiva sobre el abandono animal, la confianza y la adopción responsable.">
+    <meta name="author" content="Valeria Palacios Torres">
+    <title>El gatito y el humano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+
+    <header class="portada" id="portada">
+        <h1>El gatito y el humano</h1>
+        <p class="lema">Una historia de abandono, confianza y segundas oportunidades.</p>
+        <a class="boton" href="#juego">Empieza tu aventura <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <nav class="menu" aria-label="Recorrido por el jardín">
+        <a href="#juego">Jugar</a>
+        <a href="#historia">La historia</a>
+        <a href="#personajes">Personajes</a>
+        <a href="#lugares">Lugares</a>
+        <a href="#diario">Album gatuno</a>
+        <a href="#proceso">Cómo lo hice</a>
+        <a href="#creditos">Créditos</a>
+    </nav>
+
+    <main id="contenido">
+        <section class="parcela parcela-juego" id="juego">
+            <h2>Juega: reúne los 14 trozos de lana</h2>
+            <p>Haz clic dentro del juego para que el teclado controle al personaje. Explora el bosque y ayuda al pequeño humano a encontrar los 14 trozos de lana que necesita para que el gatito se vaya con él.</p>
+            <div class="marco-juego">
+                <iframe src="juego.html" title="Juego de Bitsy: El gatito y el humano" loading="lazy"></iframe>
+            </div>
+            <p class="ayuda">Controles: usa las flechas del teclado después de hacer clic en el juego.</p>
+        </section>
+
+        <section class="parcela" id="historia">
+            <h2>La historia</h2>
+            <div class="texto-destacado">
+                <p>Un día, mientras bajas de la montaña y recorres el bosque, encuentras a un gatito muy lindo.</p>
+                <p>Quieres adoptarlo, pero él te cuenta que tiene mucho frío y te pide que reúnas una cantidad exacta de trozos de lana para ayudarlo a preparar algo que lo abrigue.</p>
+                <p>Así comienza tu aventura por el bosque. En el camino, otros animales te ayudarán a completar las misiones y a encontrar los materiales que necesitas. Cuando termines, podrás cumplir tu promesa y el gatito se irá contigo.</p>
+            </div>
+        </section>
+
+        <section class="parcela" id="personajes">
+            <h2>Personajes</h2>
+            <div class="rejilla">
+                <article class="tarjeta personaje">
+                    <img src="img/gatito.png" alt="Un gatito solo entre los árboles del bosque" loading="lazy">
+                    <div><h3>El gatito</h3>
+                    <p>Curioso, sensible y un poco desconfiado. Después de perder su hogar, necesita tiempo y señales de cuidado antes de volver a confiar.</p></div>
+                </article>
+                <article class="tarjeta personaje">
+                    <img src="img/avatar.png" alt="El humano, un pequeño niño que le gusta explorar" loading="lazy">
+                    <div><h3>El pequeño humano</h3>
+                    <p>El personaje jugador, expresa su decisión con lo que hace. Busca los trozos de lana y cumple la promesa que le hizo al gatito.</p></div>
+                </article>
+                <article class="tarjeta personaje">
+                    <img src="img/conejito.png" alt="Un conejito, amigo del gatito">
+                    <div>
+                        <h3>Conejito</h3>
+                        <p>Es un amigo que hizo el gatito cuando estuvo en el bosque el cual ayuda al humano a cumplir su objetivo</p>
+                    </div>
+                </article>
+                <article class="tarjeta personaje">
+                    <img src="img/lobito.png" alt="Descripción del cuarto personaje">
+                    <div>
+                        <h3>lobito</h3>
+                        <p>Es amigo del conejito y el gatito, también busca ayudar al humano a cumplir su promesa. </p>
+                </article>
+                </div>
+        </section>
+
+        <section class="parcela" id="lugares">
+            <h2>Lugares de la aventura</h2>
+            <p class="intro">El recorrido pasa de la montaña al bosque. Cada lugar acerca al humano al gatito y a los trozos de lana que necesita.</p>
+            <div class="rejilla">
+                <article class="tarjeta lugar">
+                    <img src="img/room-inicio.png" alt="Vista del bosque donde comienza la aventura" loading="lazy">
+                    <div><h3>La montaña</h3><p>Al bajar por el camino, el humano llega al bosque y encuentra al gatito.</p></div>
+                </article>
+                <article class="tarjeta lugar">
+                    <img src="img/room1.png" alt="La primera parte del bosque" loading="lazy">
+                    <div><h3>Parte 1 del bosque: Madriguera de conejitos</h3><p>Un lugar donde viven los conejos, ahí el conejito le explica que debe de hacer el pequeño humano.</p></div>
+                </article>
+                <article class="tarjeta lugar">
+                    <img src="img/room2.png" alt="La segunda parte del bosque" loading="lazy">
+                    <div><h3>Parte 2 del bosque </h3><p>Una parte del bosque lleno de árboles y plantas.</p></div>
+                </article>
+                <article class="tarjeta lugar">
+                    <img src="img/room3.png" alt="La tercera parte del bosque" loading="lazy">
+                    <div><h3>Parte 3 del bosque: Tierra de lobos</h3><p>Un lugar donde viven los lobos, ahí el pequeño humano recibe ayuda del lobito, amigo del gatito.</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="parcela parcela-diario" id="diario">
+            <h2>Album de mis recuerdos</h2>
+            <p class="intro">Miauu. Estos son algunos recuerdos que mis patitas pudieron capturar.</p>
+            
+            <div class="rejilla diario-grid">
+            <article class="entrada">
+                <img src="img/gatito-nina-encuentro.png" alt="El gatito cuando era pequeño en su primer hogar" loading="lazy">
+                <div>
+                    <h3>Mi llegada a casa</h3>
+                <p>Miau… El primer día llegué a una casa nueva. La niña estaba tan feliz de verme que enseguida quise acercarme a ella.</p>
+            </div>
+            </article>
+
+            <article class="entrada">
+                <img src="img/abrazo-nina-gatito.png" alt="La niña abraza al gatito" loading="lazy">
+                <div>
+                    <h3>Una sonrisa y un hogar</h3>
+                <p>Sus padres no estaban muy convencidos de tener una mascota, pero al verla tan contenta aceptaron que me quedara. Yo todavía no sabía cuánto iba a querer a esa niña. Miauu.</p>
+            </div>
+            </article>
+
+            <article class="entrada">
+                <img src="img/lana-gatito-nina.png" alt="El gatito y la niña jugando" loading="lazy">
+                <div>
+                    <h3>Mi compañera de juegos</h3>
+                <p>La niña y yo pronto nos volvimos inseparables. Corríamos por la casa y perseguíamos juguetes. Yo siempre ganaba… aunque a veces el juguete se escondía debajo del sofá.</p>
+            </div>
+            </article>
+
+            <article class="entrada">
+                <img src="img/dormir-gatito-nina.png" alt="La niña y el gatito durmiendo" loading="lazy">
+                <div>
+                    <h3>Siesta compartida</h3>
+                <p>Cuando llegaba la noche, buscaba un lugar cerquita de ella. Con su compañía y una manta calentita, podía dormir tranquilo. Rrrr…</p>
+            </div>
+            </article>
+
+            <article class="entrada">
+                <img src="img/picnic-gatito-nina.png" alt="La niña y el gatito en un picnic" loading="lazy">
+                <div>
+                    <h3>Un picnic lleno de olores</h3>
+                <p>Un día fuimos de picnic. Mientras la niña disfrutaba la tarde, yo investigué la manta, la cesta y cada hoja que se movía. Todo podía esconder algo interesante.</p>
+            </div>
+            </article>
+
+            <article class="entrada">
+                <img src="img/jardin-gatito-nina.png" alt="La niña y el gatito en el jardín" loading="lazy">
+                <div>
+                    <h3>Tardes de aventuras</h3>
+                <p>Pasamos muchos días juntos: jugábamos, explorábamos y descansábamos. Yo creía que siempre estaríamos en casa, acompañándonos.</p>
+            </div>
+            </article>
+
+            <article class="entrada">
+                <img src="img/jarron-gatito-nina.png" alt="El gatito junto al jarrón roto" loading="lazy">
+                <div>
+                    <h3> ¡Crash!</h3>
+                <p>Una tarde salté sobre un mueble y, sin querer, tiré un jarrón. El ruido me asustó tanto como a todos los humanos de la casa. Yo no quería romperlo, lo prometo…</p>
+            </div>
+            </article>
+
+            <article class="entrada">
+                <img src="img/abandonado-gatito.png" alt="gatito abandonado" loading="lazy">
+                <div>
+                    <h3>El día que me quede sin hogar</h3>
+                <p>Los padres de la niña se enojaron mucho. Después escuché que ya no querían tenerme en casa. No entendía por qué; solo sabía que algo estaba cambiando.</p>
+            </div>
+            </article>
+
+            <article class="entrada">
+                <img src="img/gatito-solo.png" alt="Un gatito rescatado recibe cuidado y atención" loading="lazy">
+                <div>
+                    <h3>Solo entre los árboles</h3>
+                <p>Me dejaron en el bosque. Tuve que buscar comida, agua y un sitio donde esconderme. Extrañaba mi casa y a mi pequeña humana. Miau… tenía miedo.</p>
+            </div>
+            </article>
+
+            <article class="entrada">
+                <img src="img/conoce-humano.png" alt="Un gatito rescatado recibe cuidado y atención" loading="lazy">
+                <div>
+                    <h3>Alguien baja de la montaña</h3>
+                <p>Un día oí pasos acercándose. Levanté las orejas y vi a un pequeño humano que bajaba de la montaña. No sabía si podía confiar en él… pero quizá mi historia estaba a punto de cambiar.</p>
+            </div>
+            </article>
+        </div>
+        </section>
+
+        <section class="parcela" id="proceso">
+            <h2>Cómo hice este juego</h2>
+            <div class="rejilla proceso">
+                <article class="tarjeta"><h3>La idea</h3><p>La aventura empezó con una mecánica sencilla: explorar habitaciones del bosque y recoger manzanas. La historia del abandono animal le dio un motivo emocional a la búsqueda. Poco a poco fui desarrollando esta idea y realicé varios cambios cómo cambiar las manzanas por trozos de lana.</p></article>
+                <article class="tarjeta"><h3>El reto</h3><p>En Bitsy, el personaje jugador no habla. Por eso el gatito cuenta lo que ocurre y las decisiones del humano se entienden por sus acciones dentro del juego. Tambien agregue items pequeñitos para que al "recogerlos" salga un dialogo como si el avatar dijera algo.</p></article>
+                <article class="tarjeta"><h3>Lo que sigue creciendo</h3><p>Este jardín amplía el mundo del juego con recuerdos, personajes y lugares. Se puede seguir sembrando: bocetos, nuevas habitaciones y cambios futuros también forman parte del proceso. Mi idea es hacer crecer el juego, agregar más personajes secundarios y crear más aventuras.</p></article>
+            </div>
+        </section>
+
+        <section class="parcela cierre">
+            <h2>Un hogar se construye con cuidado</h2>
+            <p>Adoptar es un compromiso a largo plazo. Si una familia ya no puede cuidar a un animal, debe buscar ayuda y una alternativa segura; abandonarlo no es una solución. Cada animal merece protección, paciencia y un hogar donde pueda sentirse a salvo.</p>
+            <a class="boton" href="#portada">Volver al inicio <span aria-hidden="true">↑</span></a>
+        </section>
+    </main>
+
+    <footer id="creditos">
+        <h2>Créditos</h2>
+        <p><strong>Historia y jardín digital:</strong> Valeria Palacios Torres.</p>
+        <p><strong>Videojuego:</strong> creado en Bitsy. <strong>Sitio:</strong> HTML y CSS en VScode.</p>
+        <p><strong>Recursos visuales:</strong> imágenes generados por Chatgpt.</p>
+        <p class="pie">El gatito y el humano · Un Videojuego sobre empatía, cuidado y segundas oportunidades.</p>
+    </footer>
+</body>
+</html>
+
